@@ -76,9 +76,9 @@ npm run build
 ```bash
 npm run preview
 ```
-
+🔗 **Live Demo:** https://lenalih.github.io/frontend-interactive-chart/
 ---
 
 ## 🧑‍💻 Author
 
-Developed by **Elena Likhosherstova** as part of a frontend interview assignment.
+ **Elena Likhosherstova** 
