@@ -1,0 +1,91 @@
+.wrapper {
+    position: relative;
+    margin: 0 5px;
+}
+
+.trigger {
+    width: auto;
+    height: 32px;
+    padding: 0 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    line-height: 20px;
+}
+
+.trigger:hover {
+    background: var(--surface);
+}
+
+.arrow {
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+    transform: rotate(45deg);
+    transition: transform 0.15s ease;
+    margin-left: 16px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.open .arrow {
+    transform: rotate(-135deg);
+}
+
+.dropdown {
+    position: absolute;
+    top: 38px;
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 0;
+    z-index: 20;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.item:hover {
+    background: var(--surface);
+}
+
+.themeBtn {
+    height: 32px;
+    padding: 0 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--text);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+    transition: background 0.15s ease;
+}
+
+.themeBtn:hover {
+    background: var(--surface);
+}

@@ -1,0 +1,25 @@
+.chartWrapper {
+    width: 100%;
+    min-height: 300px;
+    height: 450px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+    .chartWrapper {
+        height: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .chartWrapper {
+        height: 320px;
+    }
+}
+
+@media (max-width: 671px) {
+    .chartWrapper {
+        height: 280px;
+    }
+}

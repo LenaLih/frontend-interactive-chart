@@ -1,73 +1,84 @@
-# Test Assignment: Interactive Line Chart
+# 📊 Interactive Analytics Chart (React + TypeScript + Vite)
 
-## Goal
+This project implements a fully interactive analytics chart using **React**, **TypeScript**, **Vite**, and **Recharts**.
 
-Build an interactive **Line Chart** to visualize A/B test statistics.
-
-The project **must be published on GitHub Pages**.
+It includes:
+- Dynamic filtering of variations
+- Day/Week data aggregation
+- Line / Smooth / Area visualization types
+- Custom tooltip
+- Theme switching (Light / Dark)
+- Reusable dropdown components
+- Mobile-responsive layout
 
 ---
 
-## Data
+## 🚀 Technologies Used
 
-Use data from `data.json`, which contains fields `date`, `visits`, and `conversions` for each variation.
+- **React 18**
+- **TypeScript**
+- **Vite**
+- **Recharts**
+- **CSS Modules**
+- **Custom Hooks** (`useOutsideClick`)
+- **Theme Context (CSS variables + LocalStorage)**
 
-You need to calculate:
+---
 
-```js
-conversionRate = (conversions / visits) * 100;
+## ✨ Features Overview
+
+### ✔ Variations Selector
+Multi-select dropdown with checkboxes to toggle chart lines.
+
+### ✔ Mode Selector
+Switch between:
+- **Day** — show daily data.
+- **Week** — automatic weekly aggregation using a custom `getWeekNumber` function.
+
+### ✔ Line Style Selector
+Available visualization types:
+- **Line**
+- **Smooth (monotone)**
+- **Area (gradient fill)**
+
+### ✔ Custom Tooltip
+Displays all variation values for the selected day/week.
+
+### ✔ Light / Dark Theme
+Implemented using:
+- CSS variables
+- Context API
+- LocalStorage persistence
+
+### ✔ Responsive Layout
+Adaptive chart height and dropdown positioning for mobile.
+
+---
+
+## 🛠 Local Installation
+
+### 1. Install dependencies
+```bash
+npm install
+```
+
+### 2. Run development server
+```bash
+npm run dev
+```
+
+### 3. Create production build
+```bash
+npm run build
+```
+
+### 4. Preview build
+```bash
+npm run preview
 ```
 
 ---
 
-## Design
+## 🧑‍💻 Author
 
-The design mockup is provided in the file `mockup.sketch`.
-
-You can open it using **[Lunacy](https://icons8.ru/lunacy)** — a free Sketch-compatible design tool available for all operating systems.
-
----
-
-## Requirements
-
-- Display a **conversion rate (conversionRate)** line chart for all variations, showing all values as **percentages**.
-- On **hover**, show a **vertical line** and a **popup** with daily data.
-- At least **one variation must always be selected**.
-- When variations are toggled, both X and Y axes must **adapt automatically** to the visible data range.
-- Display all values as **percentages**.
-- Responsive layout for screens between **671 px** and **1300 px**.
-- Controls:
-  - **Variations selector** (choose which lines to display)
-  - **Day / Week selector**
-
----
-
-## Bonus Features
-
-- Zoom / Reset zoom
-- Line style selector (`Line`, `Smooth`, `Area`)
-- Light / Dark theme toggle
-- Export chart to PNG
-
----
-
-## Tech Stack
-
-- **React + TypeScript**
-- Any charting library (e.g. **D3**, **VisX**, **Recharts**, etc.)
-- Use **CSS Modules** for component styling.
-- The project must:
-  1. Be published on **GitHub Pages**
-  2. Include a **README** with setup instructions and a short feature overview
-
----
-
-## Deliverables
-
-1. GitHub repository with full source code
-2. Live demo on GitHub Pages
-3. Clear README including:
-   - Chosen visualization library
-   - Implemented and bonus features
-   - Local setup instructions
-
+Developed by **Elena Likhosherstova** as part of a frontend interview assignment.

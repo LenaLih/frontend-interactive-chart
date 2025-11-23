@@ -1,0 +1,33 @@
+.topBar {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 23px;
+    flex-wrap: nowrap;
+}
+
+.left {
+    display: flex;
+    gap: 8px;
+}
+
+.right {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 671px) {
+    .topBar {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
